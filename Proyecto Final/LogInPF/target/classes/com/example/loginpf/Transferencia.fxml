@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="layout" prefHeight="525.0" prefWidth="400.0" style="-fx-background-color: #296685; -fx-border-color: #2FBAEB;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpf.Controllers.TransferenciaController">
+
+    <TextField fx:id="txtCuenta" alignment="CENTER" layoutX="125.0" layoutY="46.0" promptText="Ingrese cuenta" style="-fx-background-color: #0A5A6E;" />
+
+    <Button fx:id="btnTransferir" layoutX="158.0" layoutY="419.0" mnemonicParsing="false" onAction="#onTransferir" onMouseEntered="#hoverOn1" onMouseExited="#hoverOff1" style="-fx-background-color: #3498db; -fx-background-radius: 12; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" text="Transferir" />
+
+    <TextField fx:id="txtMonto" alignment="CENTER" layoutX="125.0" layoutY="106.0" promptText="Ingrese monto" style="-fx-background-color: #0A5A6E;" />
+   <TableView fx:id="tblAccounts" layoutX="32.0" layoutY="204.0" prefHeight="200.0" prefWidth="334.0" style="-fx-background-color: #296685; -fx-border-color: #2FBAEB;">
+     <columns>
+       <TableColumn fx:id="colAccount" prefWidth="112.79998779296875" style="-fx-background-color: #0A5A6E; -fx-border-color: #2FBAEB;" text="Numero de cuenta" />
+       <TableColumn fx:id="colName" prefWidth="111.20001220703125" style="-fx-background-color: #0A5A6E;-fx-border-color: #2FBAEB;" text="Nombre" />
+         <TableColumn fx:id="colId" prefWidth="104.80001220703124" style="-fx-background-color: #0A5A6E;-fx-border-color: #2FBAEB;" text="ID" />
+     </columns>
+   </TableView>
+   <Button fx:id="btnInfo" layoutX="158.0" layoutY="156.0" mnemonicParsing="false" onAction="#onInfo" onMouseEntered="#hoverOn" onMouseExited="#hoverOff" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #3498db; -fx-background-radius: 12; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" text="Info" />
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color:  #27C8F5;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginpf.Controllers.UserController">
+    <children>
+        <Label fx:id="lblMessage" layoutX="247.0" layoutY="31.0" prefHeight="18.0" prefWidth="332.0" style="-fx-font-size: 16px; -fx-text-fill: white; -fx-font-weight: bold;" text="Bienvenido a la vista de usuario o Administrador :D" />
+      <AnchorPane fx:id="elements" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #1C4147; -fx-background-radius: 12;">
+         <children>
+            <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #57B2DE; -fx-background-radius: 12;">
+               <children>
+                  <Label fx:id="lblChoose" layoutX="40.0" layoutY="30.0" style="-fx-text-fill: white;" text="¿Que deseas hacer hoy?">
+                     <font>
+                        <Font name="Impact" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnTransferencia" layoutX="29.0" layoutY="134.0" mnemonicParsing="false" onAction="#onTransferencia" onMouseEntered="#hoverOn" onMouseExited="#hoverOff" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand; -fx-background-radius: 12;" text="Transferir">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDepositar" layoutX="29.0" layoutY="228.0" mnemonicParsing="false" onAction="#onDepositar" onMouseEntered="#hoverOn2" onMouseExited="#hoverOff2" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand; -fx-background-radius: 12;" text="Depositar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneTransferencia" layoutX="200.0" layoutY="74.0" prefHeight="525.0" prefWidth="400.0" style="-fx-background-color: #296685; -fx-background-radius: 1;">
+         <children>
+            <HBox layoutX="54.0" layoutY="121.0" prefHeight="16.0" prefWidth="178.0">
+               <children>
+                  <Label fx:id="lblAccountNumber" style="-fx-text-fill: white;" text="Numero de cuenta:" />
+               </children>
+            </HBox>
+            <HBox layoutX="54.0" layoutY="220.0" prefHeight="16.0" prefWidth="178.0">
+               <children>
+                  <Label fx:id="lblCash" style="-fx-text-fill: white;" text="Deposito Bajo Monto:" />
+               </children>
+            </HBox>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>
